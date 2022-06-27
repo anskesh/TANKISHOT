@@ -1,0 +1,1542 @@
+fileFormatVersion: 2
+guid: 8a3411ff4b4d305428aa994920c993d5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MulticolorTanks_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa5f28c2577245458cf362f159736fb
+      internalID: -2112403532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83b9138e556b6f4db622ac9922d3155
+      internalID: 2048469271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d610135a88dd88f4991b5456c4214036
+      internalID: -437411384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e1454745c7e41419f1afecaa71332b
+      internalID: 1353546336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe02e19f037286b4c87391e18d633f4a
+      internalID: 973026151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbca85b8902ddb4d9403a0231ee6bea
+      internalID: -1037716074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02efca95c768b204ebbe7e326eafbfac
+      internalID: 2115411340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 228
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d990531236e83f644b7c5d688d576876
+      internalID: -1555876746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 196
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cf3884c9fc2c441969f9ec9e4b2b9f
+      internalID: -599714178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 196
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79134560948fd1c439141bfcf0147375
+      internalID: -1065201446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 196
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fd6c7ff08d3814981e2c7ed491ab9d
+      internalID: 380797667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 196
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419e6467b2625be4bba8aa9cc218c856
+      internalID: 206872916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 196
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d7e47ca5ff0445bfe971092184b5c
+      internalID: -1384129681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 196
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca36961864a3b5146b18e6709e00115f
+      internalID: -367125027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 196
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05b61b8c813f804687b5f98d9f4c98d
+      internalID: -832330515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 196
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b0b2134858fae498b5c8249f55e53f
+      internalID: 1294917073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879c2ac420e1d734db589684550bfdef
+      internalID: -379297034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa69e0a393262a4381724c903f8e341
+      internalID: 1316680422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d7b389726ffd549a65439c3129ce57
+      internalID: 1104107224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec5f50ed3298e2498216198285c4392
+      internalID: 844188058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2d756fafc5eaa4bac952206ac55bc1
+      internalID: 1795136967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_21
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db08e4aba3eaf5a4291fd11c458e2225
+      internalID: 2039776773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c85b10edcaa4d343a5609f4f9e9a8a3
+      internalID: 1616243563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 164
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037c2c24f979a594aa23bb38dcc42d37
+      internalID: 548179768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c501e9ba6eca504b9356ba4cd38afa9
+      internalID: -1100561479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861fe52ae7cb21a47b05b4dc0b008769
+      internalID: -1273067963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4f3121a98446040933cd142948ca56
+      internalID: 2105684532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bef1087c6260fd448731196eab52c2c
+      internalID: -725864099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee91c90e601be22448ccb8b066e3dfb2
+      internalID: -1238529246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7403fb3413573408d4a612d6244939
+      internalID: 1248733202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d59c2048bb15c49998ab3a3a051369
+      internalID: 1352061251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_31
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 132
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cd9c1faab5a9f46b4aa27c0d8aabfd
+      internalID: -368080425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 100
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b206de3d7f793e04daefe64652eb689b
+      internalID: -181970060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 100
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a4dbb3036fffe489e3361106995113
+      internalID: 1758737518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 100
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c946236ee1c554f8b3165e293ff6b7
+      internalID: -2067720884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_35
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 100
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce2472d171a8b246be7a3dd82953d48
+      internalID: 118128030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_36
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 100
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260ae50635291d946841ff50cec9760c
+      internalID: -1853184485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_37
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 100
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bf6fd4e36f39a46a28d2ad6e9d095b
+      internalID: -46910082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_38
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 100
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f57a605491723b4ca8b7186906fd022
+      internalID: 1227420780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_39
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 100
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451669805a5e0f842bcaf890198b4660
+      internalID: -1574640190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568015714f2d95c4f8e2d52eb0b623a6
+      internalID: 1439924173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a43982b2bff6744bf9526ff1a55d7f
+      internalID: 605367040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_42
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5250c989c770e4385908550e9ef297
+      internalID: 938406267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_43
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c52174c8977a77409b7ce770edc2e9e
+      internalID: 1116016034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_44
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2759613db788ca94d853ae7457393131
+      internalID: -2002211515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457829ec4929dae4b8df924b956cdf65
+      internalID: -1136998522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_46
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8e217ba0e0e834bbdb94139003980a
+      internalID: 690941971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_47
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 68
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28743d70a93e1ec46ab2cc0f467ee896
+      internalID: 837932554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17915e8dffeb527489d2a8312e1583b9
+      internalID: 1646599352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13704e23b94089e48b97d880c2994daf
+      internalID: 2105117874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d27fac103dd164fb1f56222a1f70c5
+      internalID: 1042652285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_51
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 36
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87bc898a6926bd4586414e149d4295d
+      internalID: 985202116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_52
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf1ba29f70377d4a9ccdb1ac1c15a45
+      internalID: 762524787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_53
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58e4d3cf27d5de4d83af3d5a3c48d4d
+      internalID: 310336446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_54
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 36
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64173cb7c0ec504bb74072fc5451c63
+      internalID: 167632936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_55
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 36
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7befe2397032744b4e36dcd53ff9ee
+      internalID: -436836238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e341539c535a14fb1b8c1141533d25
+      internalID: 552737768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_57
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 4
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb34e9a8c5f30448aafe10b2743e232
+      internalID: -1461590991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_58
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 4
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0b72524e76d15439b5e08239427b33
+      internalID: 680976477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_59
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 4
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b517f36ee2633a4197c3a11c8ddf38d
+      internalID: 100994747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_60
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 4
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc35898231971e4985097a4917e63c5
+      internalID: -1361056568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_61
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 4
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6313f0cde60de7478d444df611639d6
+      internalID: 2251726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_62
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 4
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34193e6a83e430a44987beb65260eae3
+      internalID: 187642686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MulticolorTanks_63
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 4
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b457ab1720926840b68393271dc8011
+      internalID: -809793705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f19d9c4bd5d78a24eaa589e110b8f9d9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MulticolorTanks_61: 2251726
+      MulticolorTanks_22: 1616243563
+      MulticolorTanks_39: -1574640190
+      MulticolorTanks_28: -1238529246
+      MulticolorTanks_9: -1065201446
+      MulticolorTanks_27: -725864099
+      MulticolorTanks_59: 100994747
+      MulticolorTanks_7: -1555876746
+      MulticolorTanks_54: 167632936
+      MulticolorTanks_47: 837932554
+      MulticolorTanks_5: -1037716074
+      MulticolorTanks_38: 1227420780
+      MulticolorTanks_42: 938406267
+      MulticolorTanks_26: 2105684532
+      MulticolorTanks_8: -599714178
+      MulticolorTanks_31: -368080425
+      MulticolorTanks_62: 187642686
+      MulticolorTanks_32: -181970060
+      MulticolorTanks_12: -1384129681
+      MulticolorTanks_56: 552737768
+      MulticolorTanks_3: 1353546336
+      MulticolorTanks_46: 690941971
+      MulticolorTanks_53: 310336446
+      MulticolorTanks_10: 380797667
+      MulticolorTanks_16: -379297034
+      MulticolorTanks_41: 605367040
+      MulticolorTanks_2: -437411384
+      MulticolorTanks_34: -2067720884
+      MulticolorTanks_45: -1136998522
+      MulticolorTanks_63: -809793705
+      MulticolorTanks_15: 1294917073
+      MulticolorTanks_23: 548179768
+      MulticolorTanks_36: -1853184485
+      MulticolorTanks_18: 1104107224
+      MulticolorTanks_21: 2039776773
+      MulticolorTanks_20: 1795136967
+      MulticolorTanks_49: 2105117874
+      MulticolorTanks_14: -832330515
+      MulticolorTanks_1: 2048469271
+      MulticolorTanks_52: 762524787
+      MulticolorTanks_19: 844188058
+      MulticolorTanks_29: 1248733202
+      MulticolorTanks_50: 1042652285
+      MulticolorTanks_6: 2115411340
+      MulticolorTanks_58: 680976477
+      MulticolorTanks_35: 118128030
+      MulticolorTanks_51: 985202116
+      MulticolorTanks_55: -436836238
+      MulticolorTanks_57: -1461590991
+      MulticolorTanks_40: 1439924173
+      MulticolorTanks_44: -2002211515
+      MulticolorTanks_37: -46910082
+      MulticolorTanks_0: -2112403532
+      MulticolorTanks_25: -1273067963
+      MulticolorTanks_24: -1100561479
+      MulticolorTanks_4: 973026151
+      MulticolorTanks_11: 206872916
+      MulticolorTanks_60: -1361056568
+      MulticolorTanks_17: 1316680422
+      MulticolorTanks_13: -367125027
+      MulticolorTanks_48: 1646599352
+      MulticolorTanks_30: 1352061251
+      MulticolorTanks_43: 1116016034
+      MulticolorTanks_33: 1758737518
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
