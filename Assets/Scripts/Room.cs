@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
@@ -14,28 +12,36 @@ public class Room : MonoBehaviourPunCallbacks
     
     [SerializeField] private GameObject[] _mapsTemlate;
     [SerializeField] private PlayerControl[] _playersTemplate;
-    
-    [SerializeField] private Camera _cameraTemplate;
-    [SerializeField] private GameObject _canvasTemplate;
-    
+
     [SerializeField] private float _radius;
     [SerializeField] private float _respawnCooldown;
+    
     [SerializeField] private GameObject _deathScreen;
     [SerializeField] private TextMeshProUGUI _score;
+    [SerializeField] private GameObject _joystick;
+    [SerializeField] private Camera _camera;
 
     private void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = true;
+        
         InvokeRepeating(nameof(ClearLog), 1, 10);
+
         if (PhotonNetwork.IsMasterClient)
             PhotonNetwork.InstantiateRoomObject(_mapsTemlate[Random.Range(0, _mapsTemlate.Length)].name, Vector3.zero, Quaternion.identity);
-        
-        PhotonNetwork.AutomaticallySyncScene = true;
+
         SpawnPlayer();
     }
 
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        Debug.Log("Отключение.");
+        PhotonNetwork.ReconnectAndRejoin();
     }
 
     public override void OnLeftRoom()
@@ -57,8 +63,6 @@ public class Room : MonoBehaviourPunCallbacks
 
     private void SpawnPlayer()
     {
-        var camera = Instantiate(_cameraTemplate, new Vector3(0,0, -10), Quaternion.identity);
-        
         for (int i = 0; i < 20; i++)
         {
             var position = Random.insideUnitCircle * _radius;
@@ -70,19 +74,12 @@ public class Room : MonoBehaviourPunCallbacks
                 var player = PhotonNetwork.Instantiate(_playersTemplate[Random.Range(0, _playersTemplate.Length)].name, position, Quaternion.identity);
                 var playerControl = player.GetComponent<PlayerControl>();
                 playerControl.PlayerDeath += OnDeathPlayer;
-                playerControl.SetCamera(camera);
-                playerControl.SetScore(_score);
-                
-                #if UNITY_ANDROID
-                var canvas = Instantiate(_canvasTemplate, Vector3.zero, Quaternion.identity);
-                playerControl.SetJoystick(canvas);
-                #endif
-                
+                playerControl.SetSettings(_camera, _score, _joystick);
+
                 return;
             }
         }
     }
-    
 
     private void OnDeathPlayer(PlayerControl player)
     {
@@ -131,5 +128,4 @@ public class Room : MonoBehaviourPunCallbacks
     {
         _log.text = "Инфо:\n";
     }
-
 }

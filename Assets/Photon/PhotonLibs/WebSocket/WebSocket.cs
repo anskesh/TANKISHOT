@@ -92,7 +92,7 @@ namespace ExitGames.Client.Photon
             return buffer;
         }
 
-        public void Lobby()
+        public void Connect()
         {
             m_NativeRef = SocketCreate (mUrl.ToString(), this.protocols);
 
@@ -129,7 +129,7 @@ namespace ExitGames.Client.Photon
         bool m_IsConnected = false;
         string m_Error = null;
 
-        public void Lobby()
+        public void Connect()
         {
             m_Socket = new WebSocketSharp.WebSocket(mUrl.ToString(), new string[] { this.protocols });
             m_Socket.SslConfiguration.EnabledSslProtocols = m_Socket.SslConfiguration.EnabledSslProtocols | (SslProtocols)(3072| 768);

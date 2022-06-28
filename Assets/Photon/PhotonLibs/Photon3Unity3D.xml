@@ -258,10 +258,10 @@
             <summary>Gets enabled by "request" from server (not by client).</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.EnetPeer.PeerIdForConnect">
-            <summary>Initial PeerId as used in Lobby command. If EnableServerTracing is false.</summary>
+            <summary>Initial PeerId as used in Connect command. If EnableServerTracing is false.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.EnetPeer.PeerIdForConnectTrace">
-            <summary>Initial PeerId to enable Photon Tracing, as used in Lobby command. See: EnableServerTracing.</summary>
+            <summary>Initial PeerId to enable Photon Tracing, as used in Connect command. See: EnableServerTracing.</summary>
         </member>
         <member name="M:ExitGames.Client.Photon.EnetPeer.DispatchIncomingCommands">
             <summary>
@@ -320,7 +320,7 @@
             Most of these codes are referenced somewhere else in the documentation when they are relevant to methods.
             </remarks>
         </member>
-        <member name="F:ExitGames.Client.Photon.StatusCode.Lobby">
+        <member name="F:ExitGames.Client.Photon.StatusCode.Connect">
             <summary>the PhotonPeer is connected.<br/>See {@link PhotonListener#OnStatusChanged}*</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.StatusCode.Disconnect">
@@ -454,17 +454,17 @@
             <summary>The protocol for this socket, defined in constructor.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.IPhotonSocket.ConnectAddress">
-            <summary>Address, as defined via a Lobby() call. Including protocol, port and or path.</summary>
-            <remarks>This is set in the constructor and in Lobby() again. Typically the address does not change after the IPhotonSocket is instantiated.</remarks>
+            <summary>Address, as defined via a Connect() call. Including protocol, port and or path.</summary>
+            <remarks>This is set in the constructor and in Connect() again. Typically the address does not change after the IPhotonSocket is instantiated.</remarks>
         </member>
         <member name="P:ExitGames.Client.Photon.IPhotonSocket.ServerAddress">
-            <summary>Contains only the server's hostname (stripped protocol, port and or path). Set in IPhotonSocket.Lobby().</summary>
+            <summary>Contains only the server's hostname (stripped protocol, port and or path). Set in IPhotonSocket.Connect().</summary>
         </member>
         <member name="P:ExitGames.Client.Photon.IPhotonSocket.ServerIpAddress">
             <summary>Contains the IP address of the previously resolved ServerAddress (or empty, if GetIpAddress wasn't used).</summary>
         </member>
         <member name="P:ExitGames.Client.Photon.IPhotonSocket.ServerPort">
-            <summary>Contains only the server's port address (as string).  Set in IphotonSocket.Lobby().</summary>
+            <summary>Contains only the server's port address (as string).  Set in IphotonSocket.Connect().</summary>
         </member>
         <member name="P:ExitGames.Client.Photon.IPhotonSocket.AddressResolvedAsIpv6">
             <summary>Where available, this exposes if the server's address was resolved into an IPv6 address or not.</summary>
@@ -861,10 +861,10 @@
         <member name="F:ExitGames.Client.Photon.ConnectionStateValue.Connected">
             <summary>
             The low level connection with Photon is established. On connect, the library will automatically
-            send an Init package to select the application it connects to (see also PhotonPeer.Lobby()).
+            send an Init package to select the application it connects to (see also PhotonPeer.Connect()).
             When the Init is done, IPhotonPeerListener.OnStatusChanged() is called with connect.
             </summary>
-            <remarks>Please note that calling operations is only possible after the OnStatusChanged() with StatusCode.Lobby.</remarks>
+            <remarks>Please note that calling operations is only possible after the OnStatusChanged() with StatusCode.Connect.</remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.ConnectionStateValue.Disconnecting">
             <summary>Connection going to be ended. Wait for status callback.</summary>
@@ -876,7 +876,7 @@
             <summary>Connection not properly disconnected.</summary>
         </member>
         <member name="P:ExitGames.Client.Photon.PeerBase.ServerAddress">
-            <summary>The server's address, as set by a Lobby() call, including any protocol, ports and or path.</summary>
+            <summary>The server's address, as set by a Connect() call, including any protocol, ports and or path.</summary>
             <remarks>If rHTTP is used, this can be set directly.</remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerBase.peerConnectionState">
@@ -914,13 +914,13 @@
             </summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerBase.PhotonToken">
-            <summary>Set via Lobby(..., customObject) and sent in Init-Request.</summary>
+            <summary>Set via Connect(..., customObject) and sent in Init-Request.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerBase.CustomInitData">
             <summary>Sent on connect in an Init Request.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerBase.AppId">
-            <summary>Temporary cache of AppId. Used in Lobby() to keep the AppId until we send the Init-Request (after the network-level (and Enet) connect).</summary>
+            <summary>Temporary cache of AppId. Used in Connect() to keep the AppId until we send the Init-Request (after the network-level (and Enet) connect).</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerBase.timeLastSendOutgoing">
             <summary>Set to timeInt, whenever SendOutgoingCommands actually checks outgoing queues to send them. Must be connected.</summary>
@@ -1012,14 +1012,14 @@
             </remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerStateValue.Disconnected">
-            <summary>The peer is disconnected and can't call Operations. Call Lobby().</summary>
+            <summary>The peer is disconnected and can't call Operations. Call Connect().</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerStateValue.Connecting">
             <summary>The peer is establishing the connection: opening a socket, exchanging packages with Photon.</summary>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerStateValue.InitializingApplication">
             <summary>The connection is established and now sends the application name to Photon.</summary>
-            <remarks>You set the "application name" by calling PhotonPeer.Lobby().</remarks>
+            <remarks>You set the "application name" by calling PhotonPeer.Connect().</remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.PeerStateValue.Connected">
             <summary>The peer is connected and initialized (selected an application). You can now use operations.</summary>
@@ -1161,7 +1161,7 @@
             <summary>Native Datagram Encryption is no longer part of this DLL but delivered in a separate add-on. This value always returns false.</summary>
         </member>
         <member name="P:ExitGames.Client.Photon.PhotonPeer.SerializationProtocolType">
-            <summary>Enables selection of a (Photon-)serialization protocol. Used in Lobby methods.</summary>
+            <summary>Enables selection of a (Photon-)serialization protocol. Used in Connect methods.</summary>
             <remarks>Defaults to SerializationProtocol.GpBinaryV16;</remarks>
         </member>
         <member name="F:ExitGames.Client.Photon.PhotonPeer.SocketImplementationConfig">
@@ -1557,7 +1557,7 @@
         </member>
         <member name="P:ExitGames.Client.Photon.PhotonPeer.ServerAddress">
             <summary>
-            The server address which was used in PhotonPeer.Lobby() or null (before Lobby() was called).
+            The server address which was used in PhotonPeer.Connect() or null (before Connect() was called).
             </summary>
         </member>
         <member name="P:ExitGames.Client.Photon.PhotonPeer.ServerIpAddress">
@@ -1569,7 +1569,7 @@
         <member name="P:ExitGames.Client.Photon.PhotonPeer.TransportProtocol">
             <summary>This is the transport protocol to be used for next connect (see remarks).</summary>
             <remarks>The TransportProtocol can be changed anytime but it will not change the
-            currently active connection. Instead, TransportProtocol will be applied on next Lobby.
+            currently active connection. Instead, TransportProtocol will be applied on next Connect.
             </remarks>
         </member>
         <member name="P:ExitGames.Client.Photon.PhotonPeer.IsSimulationEnabled">
@@ -1728,7 +1728,7 @@
             <param name="listener">a IPhotonPeerListener implementation</param>
             <param name="protocolType">Protocol to use to connect to Photon.</param>
         </member>
-        <member name="M:ExitGames.Client.Photon.PhotonPeer.Lobby(System.String,System.String,System.Object,System.Object)">
+        <member name="M:ExitGames.Client.Photon.PhotonPeer.Connect(System.String,System.String,System.Object,System.Object)">
             <summary>
             Starts connecting to the given Photon server. Non-blocking.
             </summary>
@@ -1752,7 +1752,7 @@
             True if a connection attempt will be made. False if some error could be detected early-on.
             </returns>
         </member>
-        <member name="M:ExitGames.Client.Photon.PhotonPeer.Lobby(System.String,System.String,System.String,System.Object,System.Object)">
+        <member name="M:ExitGames.Client.Photon.PhotonPeer.Connect(System.String,System.String,System.String,System.Object,System.Object)">
             <summary>
             Starts connecting to the given Photon server. Non-blocking.
             </summary>

@@ -86,9 +86,9 @@ namespace ExitGames.Client.Photon
         }
 
         GameObject websocketConnectionObject;
-        public override bool Lobby()
+        public override bool Connect()
         {
-            //bool baseOk = base.Lobby();
+            //bool baseOk = base.Connect();
             //if (!baseOk)
             //{
             //    return false;
@@ -109,7 +109,7 @@ namespace ExitGames.Client.Photon
 
             #if UNITY_WEBGL || NETFX_CORE
             this.sock = new WebSocket(new Uri(this.ConnectAddress), this.SerializationProtocol);
-            this.sock.Lobby();
+            this.sock.Connect();
 
             mb.StartCoroutine(this.ReceiveLoop());
             #else
@@ -162,7 +162,7 @@ namespace ExitGames.Client.Photon
 
 
             this.sock = new WebSocket(new Uri(this.ConnectAddress), this.SerializationProtocol);
-            this.sock.Lobby();
+            this.sock.Connect();
 
             mb.StartCoroutine(this.ReceiveLoop());
         }

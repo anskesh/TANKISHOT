@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 92350239}
   - component: {fileID: -4215530941555391521}
   - component: {fileID: -3140531001404627744}
+  - component: {fileID: 7073636619515118332}
   m_Layer: 0
   m_Name: Player
   m_TagString: MainCamera
@@ -107,7 +108,7 @@ MonoBehaviour:
   _bulletSpawnPoint: {fileID: 2152125807580339283}
   _template: {fileID: 5648961037340613967, guid: 556e8638e2a16484480948551813dd53, type: 3}
   _cooldownBetweenShoot: 0.5
-  _enemySkin: {fileID: -599714178, guid: 8a3411ff4b4d305428aa994920c993d5, type: 3}
+  _nickname: {fileID: 4069181360116381113, guid: 93f5e6f33d5122443bf6cbdb55029523, type: 3}
 --- !u!61 &92350234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -213,6 +214,26 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!95 &7073636619515118332
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542767318020672534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75aac7306ac60884089eb97e59c7b788, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6294532216509842260
 GameObject:
   m_ObjectHideFlags: 0

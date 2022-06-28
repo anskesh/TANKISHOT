@@ -29,7 +29,7 @@ namespace Photon.Chat.Demo
     /// some friends are already set in the Chat demo "DemoChat-Scene", 'Joe', 'Jane' and 'Bob', simply log with them so that you can see the status changes in the Interface
     ///
     /// Workflow:
-    /// Create ChatClient, Lobby to a server with your AppID, Authenticate the user (apply a unique name,)
+    /// Create ChatClient, Connect to a server with your AppID, Authenticate the user (apply a unique name,)
     /// and subscribe to some channels.
     /// Subscribe a channel before you publish to that channel!
     ///

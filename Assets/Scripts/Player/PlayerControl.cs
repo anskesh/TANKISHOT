@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEventCallback
+public class PlayerControl : MonoBehaviourPun, IDamageable, IPunObservable, IOnEventCallback
 {
 	public int Score { get; private set; } = 0;
 	public event Action<PlayerControl> PlayerDeath;
@@ -16,34 +16,50 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 	[SerializeField] private Transform _bulletSpawnPoint;
 	[SerializeField] private Bullet _template;
 	[SerializeField] private float _cooldownBetweenShoot;
-	[SerializeField] private Sprite _enemySkin;
+	
+	[SerializeField] private Canvas _nickname;
  	
-	private PhotonView _photonView;
 	private Camera _camera;
 	private Joystick _joystick;
 	private TextMeshProUGUI _score;
-	private SpriteRenderer _spriteRenderer;
+	private Animator _animator;
 	
 	private double _lastShootTime;
 	private bool _isDeath;
+	private bool _isMove;
+	private bool _settingsAreFinished;
 
 	private void Awake()
 	{
-		_photonView = GetComponent<PhotonView>();
 		_lastShootTime = PhotonNetwork.Time;
-		transform.SetParent(PlayersView.Instance.transform);
-		_spriteRenderer = GetComponent<SpriteRenderer>();
-
-		if (!_photonView.IsMine)
-			_spriteRenderer.sprite = _enemySkin;
+		_animator = GetComponent<Animator>();
 	}
 
+	private void Start()
+	{
+		if (!photonView.IsMine)
+		{
+			var nicknameCanvas = Instantiate(_nickname, Vector3.zero, Quaternion.identity);
+			nicknameCanvas.GetComponentInChildren<NicknameFollow>().Render(this);
+			
+			_animator.SetTrigger("enemy");
+		}
+		
+		transform.SetParent(PlayersView.Instance.transform);
+	}
+	
 	private void Update()
 	{
-		ChangePosition();
+		if (!_settingsAreFinished)
+			return;
 
-		if (Input.GetKey(KeyCode.Space) && _photonView.IsMine)
-			Shoot();
+		if (photonView.IsMine)
+		{
+			ChangePosition();
+
+			if (Input.GetKey(KeyCode.Space))
+				Shoot();
+		}
 	}
 
 	private void OnEnable()
@@ -61,10 +77,10 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		PlayerDeath?.Invoke(this);
 		_isDeath = true;
 
-		if (_photonView.IsMine)
+		if (photonView.IsMine)
 			return;
 		
-		RaiseEventOptions options = new RaiseEventOptions() {TargetActors = new []{_photonView.Owner.ActorNumber}};
+		RaiseEventOptions options = new RaiseEventOptions() {TargetActors = new []{photonView.Owner.ActorNumber}};
 		SendOptions sendOptions = new SendOptions() {Reliability = true};
 		PhotonNetwork.RaiseEvent(20, _isDeath, options, sendOptions);
 	}
@@ -83,33 +99,46 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		gameObject.SetActive(!_isDeath);
 	}
 
-	public void SetCamera(Camera camera)
+	public void SetSettings(Camera camera, TextMeshProUGUI score, GameObject canvas)
+	{
+		SetCamera(camera);
+		SetScore(score);
+		SetJoystick(canvas);
+		_settingsAreFinished = true;
+	}
+
+	public void SetTrigger()
+	{
+		_animator.SetTrigger("enemy");
+	}
+	
+	private void SetCamera(Camera camera)
 	{
 		_camera = camera;
 		_camera.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
 	}
 
-	public void SetScore(TextMeshProUGUI score)
+	private void SetScore(TextMeshProUGUI score)
 	{
 		_score = score;
 		_score.text = $"Мой счёт: {Score}";
 	}
 	
-	public void SetJoystick(GameObject canvas)
+	private void SetJoystick(GameObject canvas)
 	{
 		var joystick = canvas.GetComponentInChildren<Joystick>();
 		if (joystick != null)
 			_joystick = joystick;
 		var button = canvas.GetComponentInChildren<Button>();
 		button.onClick.AddListener(Shoot);
+		
+		#if !UNITY_ANDROID
+		canvas.SetActive(false);
+		#endif
 	}
 	
 	private void ChangePosition()
 	{
-		if (!_photonView.IsMine)
-		{
-			return;
-		}
 		#if UNITY_ANDROID
 		var x = _joystick.Horizontal;
 		var y = _joystick.Vertical;
@@ -119,9 +148,18 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		var x = Input.GetAxis("Horizontal");
 		var y = Input.GetAxis("Vertical");
 		#endif
-		
-		if (x == 0 && y == 0) 
+
+		if (MathF.Abs(x) <= 0.02 && MathF.Abs(y) <= 0.02)
+		{
+			_isMove = false;
+			_animator.SetBool("isMoveFriend", _isMove);
+			base.photonView.RPC(nameof(SetState), RpcTarget.Others, _isMove);
 			return;
+		}
+
+		_isMove = true;
+		_animator.SetBool("isMoveFriend", _isMove);
+		base.photonView.RPC(nameof(SetState), RpcTarget.Others, _isMove);
 
 		var direction = new Vector3(x, y, 0);
 
@@ -147,6 +185,7 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		{
 			stream.SendNext(Score);
 			stream.SendNext(_isDeath);
+			stream.SendNext(_isMove);
 			
 			gameObject.SetActive(!_isDeath);
 			PlayersTop.Instance.RenderTop();
@@ -158,7 +197,8 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		{
 			Score = (int) stream.ReceiveNext();
 			_isDeath = (bool) stream.ReceiveNext();
-			
+			_isMove = (bool) stream.ReceiveNext();
+ 			
 			gameObject.SetActive(!_isDeath);
 			PlayersTop.Instance.RenderTop();
 			
@@ -173,10 +213,17 @@ public class PlayerControl : MonoBehaviour, IDamageable, IPunObservable, IOnEven
 		{
 			case 20:
 			{
-				if (_photonView.IsMine)
+				if (photonView.IsMine)
 					ApplyDamage();
 				break;
 			}
 		}
+	}
+
+	[PunRPC]
+	void SetState(bool isMove)
+	{
+		_isMove = isMove;
+		_animator.SetBool("isMoveEnemy", _isMove);
 	}
 }
